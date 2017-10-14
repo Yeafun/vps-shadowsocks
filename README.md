@@ -15,11 +15,14 @@
      ssh -i .ssh/你的公钥pubkey root@你的服务器IP 
    
 ##### 安装与配置Shadowsocks
-    sudo apt-get update <br>
-    apt-get install python-pip <br>
-    pip install shadowsocks <br>
+```
+    sudo apt-get update
+    apt-get install python-pip
+    pip install shadowsocks
     nano /etc/shadowsocks.json 
+```
 ##### 修改配置文件shadowsocks.json
+```
     { 
        "server":"my_server_ip", 
        "local_address": "127.0.0.1", 
@@ -34,6 +37,7 @@
        "method":"aes-256-cfb", 
        "fast_open": false 
      } 
+```
 ##### 注意my_server_ip要修改成自己的IP 
 ##### 重启shadowsocks 
     ssserver -c /etc/shadowsocks.json -d start 
