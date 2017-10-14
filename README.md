@@ -10,9 +10,9 @@
 ### 服务器配置
     官网有浏览器登陆的方式，但是我认为很不好用，需要改密码，而且很卡，所以选择ssh远程登录 
 ##### 使用cmd登陆ssh,如果没用过ssh,需要自行安装
-     ssh root@你的服务器ip 
+    ssh root@你的服务器ip 
 ###### 如果出现错误的话，可以选择指定ssh key
-     ssh -i .ssh/你的公钥pubkey root@你的服务器IP 
+    ssh -i .ssh/你的公钥pubkey root@你的服务器IP 
    
 ##### 安装与配置Shadowsocks
 ```
